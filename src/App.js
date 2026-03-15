@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const [joke, setJoke] = useState('');
 
+const [reaction, setReaction] = useState("");
   const fetchJoke = async () => {
     const res = await fetch('https://icanhazdadjoke.com/', {
       headers: { Accept: 'application/json' }

@@ -10,7 +10,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #34d7ec, #caa9eb);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -53,4 +53,26 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+button {
+  background: #117aaa;
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #117aaa;
+  transform: scale(1.05);
+}
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+  transition: opacity 0.3s ease;
 }
