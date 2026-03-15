@@ -14,12 +14,24 @@ const [reaction, setReaction] = useState("");
   };
 
   return (
-    <div className="App">
-      <h1>Random Joke Generator</h1>
-      <p>{joke}</p>
+  <div className="App">
+    <div className="container">
+      <h1>😂 Random Joke Generator</h1>
+
+      <p className="joke">{joke || "Click the button to get a joke!"}</p>
+
       <button onClick={fetchJoke}>Get a Joke</button>
+
+      <div className="reactions">
+        <button onClick={() => setReaction("😂")}>😂</button>
+        <button onClick={() => setReaction("👍")}>👍</button>
+        <button onClick={() => setReaction("👎")}>👎</button>
+      </div>
+
+      {reaction && <p>Your reaction: {reaction}</p>}
     </div>
-  );
+  </div>
+);
 }
 
 export default App;
