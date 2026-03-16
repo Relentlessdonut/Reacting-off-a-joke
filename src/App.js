@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  
   const [joke, setJoke] = useState('');
 
-const [reaction, setReaction] = useState("");
+  const [reaction, setReaction] = useState("");
   const fetchJoke = async () => {
     const res = await fetch('https://icanhazdadjoke.com/', {
       headers: { Accept: 'application/json' }
@@ -16,7 +17,7 @@ const [reaction, setReaction] = useState("");
   return (
   <div className="App">
     <div className="container">
-      <h1>😂 Random Joke Generator</h1>
+      <h1> Random Joke Generator</h1>
 
       <p className="joke">{joke || "Click the button to get a joke!"}</p>
 

@@ -21,7 +21,7 @@ body {
   background: white;
   padding: 40px;
   border-radius: 12px;
-  width: 400px;
+  width: 420px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -75,4 +75,12 @@ p {
   margin-top: 20px;
   color: #333;
   transition: opacity 0.3s ease;
+}
+.joke {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #333;
+}
+.reactions {
+  margin-top: 20px;
 }
