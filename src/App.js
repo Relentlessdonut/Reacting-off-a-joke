@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   
   const [joke, setJoke] = useState('');
-
+  const [darkMode, setDarkMode] = useState(false);
   const [reaction, setReaction] = useState("");
   const fetchJoke = async () => {
     const res = await fetch('https://icanhazdadjoke.com/', {
